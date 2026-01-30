@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Atelier</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Get in Touch</h1>
+                <p>We'd love to hear from you. Whether you have a question about our products, need assistance with an order, or just want to say hello, we're here to help.</p>
+                
+                <div class="info-block">
+                    <h3>Visit Our Studio</h3>
+                    <p>123 Artisan Avenue<br>
+                    Portland, OR 97209<br>
+                    United States</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Contact Details</h3>
+                    <p>Email: hello@atelier.com<br>
+                    Phone: (503) 555-0123<br>
+                    Hours: Mon-Fri 9am-5pm PST</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected for new arrivals, studio updates, and behind-the-scenes glimpses of our artisan partners.</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address *</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="product">Product Question</option>
+                            <option value="wholesale">Wholesale Inquiry</option>
+                            <option value="artisan">Artisan Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="contact-newsletter" name="newsletter">
+                            I'd like to receive updates and exclusive offers
+                        </label>
+                    </div>
+
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <div class="form-message" id="contact-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>Do you offer international shipping?</h3>
+                <p>Yes, we ship to select countries worldwide. Shipping costs and delivery times vary by location. International orders may be subject to customs fees.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is your return policy?</h3>
+                <p>We accept returns within 30 days of delivery for unused items in original packaging. Custom or personalized items cannot be returned unless defective.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are your products handmade?</h3>
+                <p>Yes, all our products are handcrafted by skilled artisans. Each piece may have slight variations that reflect the handmade nature and add to its unique character.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I care for my purchase?</h3>
+                <p>Care instructions are included with each product. Generally, we recommend hand washing ceramics, spot cleaning textiles, and treating wood with food-safe oil periodically.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Atelier</h4>
+                <p>Thoughtfully curated goods for everyday living</p>
+            </div>
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="products.html">New Arrivals</a></li>
+                    <li><a href="products.html">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
