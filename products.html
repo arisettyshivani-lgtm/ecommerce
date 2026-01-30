@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier - Artisan Goods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Atelier</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Curated Collection</h1>
+            <p class="fade-in delay-1">Handcrafted goods for the modern home</p>
+            <a href="products.html" class="cta-button fade-in delay-2">Explore Collection</a>
+        </div>
+        <div class="hero-image fade-in delay-3">
+            <div class="image-placeholder">
+                <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="500" fill="#f4f1ea"/>
+                    <circle cx="200" cy="250" r="80" fill="#d4c5a9" opacity="0.5"/>
+                    <rect x="100" y="150" width="200" height="200" fill="#a89876" opacity="0.3"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="section-header">
+            <h2>Featured Items</h2>
+            <a href="products.html" class="view-all">View All →</a>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card" data-product-id="1">
+                <div class="product-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#e8e4db"/>
+                        <circle cx="150" cy="200" r="60" fill="#c9b99a"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3>Ceramic Vase</h3>
+                    <p class="product-description">Handthrown stoneware</p>
+                    <p class="product-price">$85.00</p>
+                    <button class="add-to-cart" data-id="1" data-name="Ceramic Vase" data-price="85">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="2">
+                <div class="product-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#dcd6cb"/>
+                        <rect x="75" y="100" width="150" height="200" fill="#b5a88e"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3>Linen Throw</h3>
+                    <p class="product-description">Pure Belgian linen</p>
+                    <p class="product-price">$125.00</p>
+                    <button class="add-to-cart" data-id="2" data-name="Linen Throw" data-price="125">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="3">
+                <div class="product-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f0ebe2"/>
+                        <ellipse cx="150" cy="200" rx="80" ry="100" fill="#d4c4a8"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3>Oak Cutting Board</h3>
+                    <p class="product-description">Solid white oak</p>
+                    <p class="product-price">$68.00</p>
+                    <button class="add-to-cart" data-id="3" data-name="Oak Cutting Board" data-price="68">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Join Our Community</h2>
+            <p>Subscribe for updates on new arrivals and exclusive offers</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p class="form-message" id="newsletter-message"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Atelier</h4>
+                <p>Thoughtfully curated goods for everyday living</p>
+            </div>
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="products.html">New Arrivals</a></li>
+                    <li><a href="products.html">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
